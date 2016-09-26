@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:maxLines="@integer/max_lines_name"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:hint="@string/edit_item_name_hint"/>
+
+    <EditText
+        android:id="@+id/edit_item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_item_name"
+        android:hint="@string/edit_item_description_hint"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxLines="@integer/max_lines_description"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_item_description"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_item_quantity"
+            android:textSize="18sp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+        <EditText
+            android:id="@+id/edit_item_quantity"
+            android:layout_width="@dimen/item_quantity_edit_text_width"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_item_quantity_default"
+            android:gravity="center"
+            android:inputType="number"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/edit_item_delete_button"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_item_delete"
+        android:background="@drawable/selector_button_transparent"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/edit_item_cancel_button"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_item_cancel"
+        android:background="@drawable/selector_button_transparent"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/edit_item_save_button"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_item_save"
+        android:background="@drawable/selector_button_transparent"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
