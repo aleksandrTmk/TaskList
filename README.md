@@ -6,6 +6,6 @@ Simple Android application containing a list of items where a user can do any of
 - Delete
 - Check off
 
-The purpose was to explore [Realm DB](https://www.realm.io) instead of SQLite.
+The purpose was to explore [Realm DB](https://www.realm.io) instead of SQLite. You can download the [apk here.](https://github.com/aleksandrTmk/TaskList/raw/master/assets/app-debug.apk)
 
 ![](assets/task_list.gif)
